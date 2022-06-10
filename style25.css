@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap');
+* {
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #e99);
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(3, min-content); */
+    /* minimo contenido según lo que esté escrito */
+    /* grid-template-columns: repeat(3, minmax(100px, 300px)); */
+    /* grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); */
+    /* dinámicamente va agregando columnas si cumple con la condición */
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    background: #666;
+    /* justify-items: center;
+    align-items: center; */
+    /* Esto alinea filas y columnas, por default es stretch que estira, estos no estiran */
+    height: 600px;
+    /* align alinea vertical y justify en horizontal */
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-item {
+    color: #fff;
+    background: #55f;
+    background: linear-gradient(to bottom, #34f, #96f);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.grid-item:first-child {
+    align-self: start;
+    justify-self: start;
+}
+
+.grid-item:nth-child(5) {
+    justify-self: end;
+}
+
+.grid-item:nth-child(6) {
+    justify-self: start;
+}
+
+.grid-item:nth-child(7) {
+    align-self: end;
+}
+
+.grid-item:nth-child(11) {
+    align-self: start;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    box-sizing: content-box;
+    /* Si bien es predeterminado en normalize habíamos puesto border box  */
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    background-color: yellowgreen;
+}
+
+.caja2,
+.caja4 {
+    background-color: tomato;
+}
+
+.caja2 {
+    position: relative;
+    /* Conserva su lugar en pantalla y tiene referencia del lugar original asignado */
+    left: 50px;
+    top: 10px;
+    /* zindex Orden en el eje z (más cercano a nosotros, es el que va a aparecer adelante) */
+    z-index: 10;
+    /* Ya con esto va a quedar arriba */
+}
+
+.caja3 {
+    position: relative;
+    /* Al asignarle zindex después que caja2 va a quedar arriba */
+    z-index: 1;
+    /* el z-index puede orden más allá del orden */
+}

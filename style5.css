@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    box-sizing: content-box;
+    /* Si bien es predeterminado en normalize habíamos puesto border box  */
+}
+
+.caja1,
+.caja2 {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.caja1 {
+    background-color: red;
+    /* border: 10px solid salmon; Lo hace más grande */
+    outline: 10px solid salmon;
+    /* No mueve nada */
+}
+
+.caja2 {
+    background-color: blue;
+}

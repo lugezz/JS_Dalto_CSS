@@ -1,0 +1,29 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    * {
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+        font-weight: 100;
+        box-sizing: content-box;
+        /* Si bien es predeterminado en normalize habíamos puesto border box  */
+    }
+    
+    div {
+        width: 160px;
+        height: 160px;
+        background-color: blueviolet;
+    }
+    
+    .caja2,
+    .caja4 {
+        background-color: crimson;
+    }
+    
+    .caja2 {
+        position: absolute;
+        /* no ocupa lugar y caja 3 se posiciona en el mismo lugar */
+        opacity: 0.5;
+        margin-left: 100px;
+        /* Si bien no tiene lugar asignado toma como referencia el lugar original */
+        top: 50px;
+        /* Sin embargo al asignarle posición es con respecto al contenedor */
+    }

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap');
+* {
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: 100;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #666;
+    margin: 50px 50px;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #5dd;
+}
+
+.form__input:focus {
+    background: #dd4;
+}
+
+.form textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+.flex-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+}
+
+.img-container {
+    padding: 20px;
+    margin: auto;
+    border-radius: 80%;
+    background: #fff;
+}
+
+.flex-img img {
+    width: 100%;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    box-sizing: content-box;
+    /* Si bien es predeterminado en normalize habíamos puesto border box  */
+}
+
+.contenedor {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    margin: 100px;
+    z-index: 100;
+    /* No va a quedar arriba (casi) nunca de su hijo  */
+}
+
+.hijo {
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: -40px;
+    left: -40px;
+    z-index: 1;
+    /* Sóoolo quedaría abajo siendo -1 */
+}

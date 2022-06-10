@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: 100;
+    box-sizing: content-box;
+    /* Si bien es predeterminado en normalize habíamos puesto border box  */
+}
+
+body {
+    padding-top: 200px;
+    /* para que no quede atrás el texto */
+}
+
+.caja-fixed {
+    background-color: salmon;
+    position: fixed;
+    /* Trabaja como el absolute porque no ocupa lugar */
+    /* top: 20px; */
+    margin-top: -200px;
+    /* para que no le afecte el padding */
+}

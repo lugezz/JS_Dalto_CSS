@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: 100;
+    box-sizing: content-box;
+    /* Si bien es predeterminado en normalize habíamos puesto border box  */
+}
+
+div {
+    background-color: skyblue;
+    border: 10px solid crimson;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: inline-block;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    box-sizing: content-box;
+    /* Si bien es predeterminado en normalize habíamos puesto border box  */
+}
+
+div {
+    background-color: blueviolet;
+    position: absolute;
+    /* esto hace que los objetos aunque sean block se ajusten al contenido como si fuera display inline */
+}
+
+div>div {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+}
+
+.container {
+    /* position: static; */
+    /* porque también es un div */
+    position: relative;
+    /* Para posicionarlo y que los div interiores lo tomen como referencia */
+    border: 4px solid red;
+    margin: 50px auto;
+    height: 450px;
+    width: 450px;
+    background-color: seagreen;
+}
+
+.caja2,
+.caja4 {
+    /* background-color: turquoise; */
+}
+
+.caja2 {
+    bottom: 0;
+}
+
+.caja3 {
+    bottom: 0;
+    right: 0;
+}
+
+.caja4 {
+    right: 0;
+}
+
+.caja5 {
+    /* margin: 171px;  esto matemáticamente, pero mejor hacer:*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

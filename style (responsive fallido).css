@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap');
+* {
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    /* box-sizing: content-box; */
+    /* Si bien es predeterminado en normalize habíamos puesto border box  */
+}
+
+.nav__responsive-ul {
+    display: none;
+}
+
+.nav {
+    background: darkslateblue;
+}
+
+.nav__ul,
+.nav__responsive-ul {
+    margin: 0;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 12px;
+    color: #ffa;
+}
+
+.nav__li:hover {
+    color: #ccc
+}
+
+.nav__li:hover>a {
+    color: #ccc
+}
+
+.nav__li a {
+    color: #ff8;
+    text-decoration: none;
+}
+
+.nav__li i {
+    margin-right: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.responsive__button-container {
+    position: absolute;
+    width: 100%;
+    background-color: darkslateblue;
+    margin-top: -30px;
+    margin-left: -40px;
+    /* del tamaño del nav */
+}
+
+.responsive__button {
+    font-size: 20px;
+    color: #ffa;
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+    .nav__ul {
+        display: none;
+    }
+    .nav {
+        height: 50px;
+        width: 100%;
+        background: #fff;
+    }
+    .nav__responsive-ul {
+        display: block;
+        position: absolute;
+        /* background: darkslateblue; */
+        width: 100%;
+        margin-top: 30px;
+        /* del tamaño del nav */
+    }
+    .nav__resp__li {
+        padding: 12px;
+        color: #ffa;
+        width: 100%;
+    }
+    .nav__resp__li:hover {
+        color: #ccc
+    }
+    .nav__resp__li:hover>a {
+        color: #ccc
+    }
+    .nav__resp__li {
+        list-style: none;
+    }
+    .nav__resp__li a {
+        color: #ff8;
+        text-decoration: none;
+    }
+    .nav__resp__li i {
+        width: 30px;
+        text-align: center;
+        margin-right: 5px;
+        box-sizing: border-box;
+    }
+    .nav__li-container {
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 50px);
+        left: -40px;
+        width: 100%;
+        /* el height del nav */
+    }
+    .nav__responsive-ul:hover>.nav__li-container {
+        top: 0;
+        background: darkslateblue;
+    }
+}
